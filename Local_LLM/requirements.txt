@@ -1,0 +1,4 @@
+langchain
+Ctransformers
+langchain-community
+streamlit
