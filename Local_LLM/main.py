@@ -8,7 +8,6 @@ from ctransformers import AutoModelForCausalLM
 
 
 model_id = 'TheBloke/Mistral-7B-Instruct-v0.1-GGUF'
-# model_id = 'TheBloke/MistralLite-7B-GGUF'
 # model_id = 'TheBloke/Mistral-7B-codealpaca-lora-GGUF'
 os.environ['XDG_CACHE_HOME']= './model'
 config ={'temperature':0.3,'context_length': 2000}
