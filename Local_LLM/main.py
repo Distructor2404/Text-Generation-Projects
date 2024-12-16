@@ -25,9 +25,12 @@ def fetch_conversation(query:str):
     return response
 
 st.header("Fetch String Context")
-query = st.text_area("Enter your query",)
+query = st.text_area("Enter your query",height=250)
 
 if st.button("Fetch"):
     with st.spinner("Fetching..."):
         response = fetch_conversation(query)
-        st.write(response)
+        try:
+            st.json(response,expanded=2)
+        except:
+            st.write(response)
